@@ -24,6 +24,7 @@ const MenuLink = styled(NavLink)`
     font-size: 32px;
     font-weight: 500;
     text-decoration: none;
+    color: ${({ theme }) => theme.colors.text};
     &.active {
         font-weight: 800;
     }

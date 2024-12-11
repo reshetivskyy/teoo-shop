@@ -7,7 +7,7 @@ import smalllogo from "@shared/assets/images/small-logo.png";
 
 const Footer = () => {
     return (
-        <section>
+        <Styled.Footer>
             <Container>
                 <Styled.Box>
                     <img src={smalllogo} alt="logo" />
@@ -15,7 +15,7 @@ const Footer = () => {
                     <ToggleLanguage />
                 </Styled.Box>
             </Container>
-        </section>
+        </Styled.Footer>
     );
 };
 

@@ -7,10 +7,10 @@ const ToggleLanguage = () => {
     return (
         <Styled.Box>
             <Styled.Flag>
-                <img src={ua} alt="flag" />
+                <Styled.Icon src={ua} alt="flag" />
             </Styled.Flag>
             <Styled.Flag>
-                <img src={uk} alt="flag" />
+                <Styled.Icon src={uk} alt="flag" />
             </Styled.Flag>
         </Styled.Box>
     );

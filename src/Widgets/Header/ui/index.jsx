@@ -12,7 +12,7 @@ import search from "@shared/assets/images/search.svg";
 
 const Header = () => {
     return (
-        <section>
+        <header>
             <Container>
                 <Styled.Box>
                     <Styled.Logo src={logo} alt="logo" />
@@ -44,7 +44,7 @@ const Header = () => {
                     </Styled.Quick>
                 </Styled.Box>
             </Container>
-        </section>
+        </header>
     );
 };
 
