@@ -20,6 +20,7 @@ const Text = styled.h4`
     font-family: "Manrope", serif;
     font-weight: 800;
     font-size: 16px;
+    color: ${({ $color }) => $color};
 `;
 
 const Input = styled.input`

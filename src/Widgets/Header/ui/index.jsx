@@ -12,7 +12,7 @@ import search from "@shared/assets/images/search.svg";
 
 const Header = () => {
     return (
-        <header>
+        <Styled.Header>
             <Container>
                 <Styled.Box>
                     <Styled.Logo src={logo} alt="logo" />
@@ -37,14 +37,14 @@ const Header = () => {
                         </Styled.MenuItem>
                     </Styled.Menu>
                     <Styled.Quick>
-                        <Button icon={instagram} />
-                        <Button icon={cart} />
-                        <Button icon={user} />
+                        <Button icon={instagram} width="52px" height="52px" />
+                        <Button icon={cart} width="52px" height="52px" />
+                        <Button icon={user} width="52px" height="52px" />
                         <SearchButton icon={search} />
                     </Styled.Quick>
                 </Styled.Box>
             </Container>
-        </header>
+        </Styled.Header>
     );
 };
 

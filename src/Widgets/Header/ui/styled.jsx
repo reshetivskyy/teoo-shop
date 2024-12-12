@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
+const Header = styled.header``;
+
 const Box = styled.header`
     display: flex;
     align-items: center;
@@ -35,13 +37,6 @@ const Quick = styled.div`
     gap: 10px;
 `;
 
-const Styled = {
-    Box,
-    Logo,
-    Menu,
-    MenuItem,
-    MenuLink,
-    Quick,
-};
+const Styled = { Header, Box, Logo, Menu, MenuItem, MenuLink, Quick };
 
 export default Styled;
