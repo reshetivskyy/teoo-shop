@@ -7,7 +7,7 @@ const SearchButton = ({ icon }) => {
     const [focus, setFocus] = useState(false);
     const [search, setSearch] = useState("");
 
-    const handleMouseOnEnter = () => {
+    const handleOnMouseEnter = () => {
         setHover(true);
     };
 
@@ -34,7 +34,7 @@ const SearchButton = ({ icon }) => {
 
     return (
         <Styled.Box
-            onMouseEnter={handleMouseOnEnter}
+            onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleMouseLeave}
             onFocus={handleOnFocus}
             onBlur={handleOnUnFocus}

@@ -21,7 +21,6 @@ const Menu = styled.ul`
 const MenuItem = styled.li``;
 
 const MenuLink = styled(NavLink)`
-    font-family: "Manrope", serif;
     text-transform: uppercase;
     font-size: 32px;
     font-weight: 500;

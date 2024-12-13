@@ -16,15 +16,39 @@ const Container = styled.div`
     padding-inline: 10px;
 `;
 
+const Title = styled.h1`
+    font-weight: 800;
+    font-size: 52px;
+    color: ${({ $color }) => $color};
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    white-space: nowrap;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        position: static;
+    }
+`;
+
+const SubTitle = styled.h2`
+    font-weight: 800;
+    font-size: 28px;
+    color: ${({ $color }) => $color};
+`;
+
 const Text = styled.h4`
-    font-family: "Manrope", serif;
     font-weight: 800;
     font-size: 16px;
     color: ${({ $color }) => $color};
 `;
 
 const Input = styled.input`
-    font-family: "Manrope", serif;
     font-weight: 800;
     font-size: 16px;
     border: 0;
@@ -35,6 +59,7 @@ const Input = styled.input`
 const GlobalStyles = createGlobalStyle`
     html{
         box-sizing: border-box;
+        font-family: "Manrope", serif;
     }
     *,*::after,*::before{
         box-sizing: inherit;
@@ -76,7 +101,11 @@ const GlobalStyles = createGlobalStyle`
         border: none;
         background-color: transparent;
     }
+
+    a {
+        text-decoration: none;
+    }
     
 `;
 
-export { Wrapper, Main, Container, Text, Input, GlobalStyles };
+export { Wrapper, Main, Container, Title, SubTitle, Text, Input, GlobalStyles };

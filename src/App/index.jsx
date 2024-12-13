@@ -1,8 +1,8 @@
 import { RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
-import { darkTheme } from "./Theme";
-import { Router } from "./Router";
+import darkTheme from "./Theme";
+import Router from "./Router";
 
 import { GlobalStyles } from "@shared/styles";
 

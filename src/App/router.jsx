@@ -17,6 +17,7 @@ const Layout = () => {
         </Wrapper>
     );
 };
+
 const Router = createBrowserRouter([
     {
         path: "/",
@@ -30,4 +31,4 @@ const Router = createBrowserRouter([
     },
 ]);
 
-export { Router };
+export default Router;
