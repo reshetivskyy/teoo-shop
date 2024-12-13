@@ -1,5 +1,5 @@
-import axios from "axios";
 import { useState, useEffect } from "react";
+import { fetchProducts } from "../api";
 
 const useLoadProducts = () => {
     const [data, setData] = useState(null);
@@ -11,9 +11,7 @@ const useLoadProducts = () => {
             setIsLoading(true);
             setIsError(false);
             try {
-                const response = await axios.get(
-                    "https://jsonplaceholder.typicode.com/posts"
-                );
+                const response = await fetchProducts();
                 setData(response.data);
             } catch (error) {
                 setIsError(true);

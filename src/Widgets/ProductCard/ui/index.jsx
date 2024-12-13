@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 import CartButton from "@features/CartButton/ui";
 
-import { SubTitle, Text } from "@shared/styles";
 import Styled from "./styled";
 
 const ProductCard = ({ id, image, title, desc, price, sale }) => {

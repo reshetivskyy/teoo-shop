@@ -8,6 +8,7 @@ const Wrapper = styled.div`
 
 const Main = styled.main`
     display: flex;
+    flex-direction: column;
 `;
 
 const Container = styled.div`
@@ -67,6 +68,7 @@ const GlobalStyles = createGlobalStyle`
     }
     ul[class],
     ol[class] {
+        list-style-type: none;
         padding: 0;
     }
     body,
@@ -104,6 +106,7 @@ const GlobalStyles = createGlobalStyle`
 
     a {
         text-decoration: none;
+        color: inherit;
     }
     
 `;

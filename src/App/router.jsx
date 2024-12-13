@@ -5,6 +5,7 @@ import { Footer } from "@widgets/Footer";
 import { Header } from "@widgets/Header";
 
 import { Main, Wrapper } from "@shared/styles";
+import { Product } from "@pages/Product";
 
 const Layout = () => {
     return (
@@ -26,6 +27,10 @@ const Router = createBrowserRouter([
             {
                 index: true,
                 element: <Home />,
+            },
+            {
+                path: "/new-collection/product/:id",
+                element: <Product />,
             },
         ],
     },
