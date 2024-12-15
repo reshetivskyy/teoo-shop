@@ -17,6 +17,11 @@ const Container = styled.div`
     padding-inline: 10px;
 `;
 
+const Flex = styled.div`
+    display: flex;
+    gap: 10px;
+`;
+
 const Title = styled.h1`
     font-weight: 800;
     font-size: 52px;
@@ -44,9 +49,9 @@ const SubTitle = styled.h2`
 `;
 
 const Text = styled.h4`
-    font-weight: 800;
+    font-weight: 500;
     font-size: 16px;
-    color: ${({ $color }) => $color};
+    color: ${({ theme }) => theme.colors.text};
 `;
 
 const Input = styled.input`
@@ -65,6 +70,9 @@ const GlobalStyles = createGlobalStyle`
     *,*::after,*::before{
         box-sizing: inherit;
         font: inherit;
+    }
+    body {
+        background-color: ${({ theme }) => theme.colors.bg};
     }
     ul[class],
     ol[class] {
@@ -111,4 +119,14 @@ const GlobalStyles = createGlobalStyle`
     
 `;
 
-export { Wrapper, Main, Container, Title, SubTitle, Text, Input, GlobalStyles };
+export {
+    Wrapper,
+    Main,
+    Container,
+    Flex,
+    Title,
+    SubTitle,
+    Text,
+    Input,
+    GlobalStyles,
+};

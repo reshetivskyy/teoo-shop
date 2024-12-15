@@ -7,12 +7,12 @@ const Box = styled.div`
 const MainImageBlock = styled.div`
     max-width: 100%;
     overflow: hidden;
+    border-radius: 5px;
     cursor: move;
 `;
 
 const MainImage = styled.img`
     width: 100%;
-    border-radius: 5px;
 `;
 
 const List = styled.div`
@@ -55,6 +55,8 @@ const ListButton = styled.button`
 
 const ListImage = styled.img`
     min-width: calc(33% - 5px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 5px;
     filter: ${({ $clicked }) => ($clicked ? "" : "brightness(50%)")};
     cursor: pointer;

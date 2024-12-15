@@ -9,8 +9,8 @@ const Picker = ({ items, selected, onSelect }) => {
                     key={item.id}
                     color={item.color}
                     text={item.size}
-                    clicked={selected === (item.color || item.size)}
-                    onClick={() => onSelect(item.color || item.size)}
+                    clicked={selected === item.id}
+                    onClick={() => onSelect(item.id)}
                     width="52px"
                     height="52px"
                 />

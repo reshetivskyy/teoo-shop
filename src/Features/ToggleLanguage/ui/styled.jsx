@@ -8,6 +8,7 @@ const Box = styled.div`
 const Flag = styled.button`
     background-color: transparent;
     border: 0;
+    cursor: pointer;
 `;
 
 const Icon = styled.img`

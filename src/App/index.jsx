@@ -1,17 +1,15 @@
 import { RouterProvider } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
-
-import darkTheme from "./Theme";
 import Router from "./Router";
-
-import { GlobalStyles } from "@shared/styles";
+import { ThemeContextProvider } from "@shared/lib";
+import { AppThemeProvider } from "./Theme";
 
 const App = () => {
     return (
-        <ThemeProvider theme={darkTheme}>
-            <RouterProvider router={Router} />
-            <GlobalStyles />
-        </ThemeProvider>
+        <ThemeContextProvider>
+            <AppThemeProvider>
+                <RouterProvider router={Router} />
+            </AppThemeProvider>
+        </ThemeContextProvider>
     );
 };
 

@@ -6,18 +6,17 @@ const Box = styled.button`
     align-items: center;
     height: ${({ $height }) => $height};
     width: ${({ $width }) => $width};
-    box-shadow: ${({ $clicked }) =>
-        $clicked ? "none" : "0px 0px 36.2px 11px rgba(0, 0, 0, 0.05)"};
-    background-color: ${({ $clicked }) => ($clicked ? "#000" : "#fff")};
+    box-shadow: ${({ theme }) => theme.shadow};
     border-radius: 1000px;
     border: 0;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
     overflow: hidden;
     padding: 0;
+    background-color: transparent;
 
     &:hover {
-        box-shadow: 0px 0px 36.2px 11px rgba(0, 0, 0, 0.12);
+        box-shadow: ${({ theme }) => theme.activeShadow};
     }
 `;
 
@@ -51,9 +50,16 @@ const Color = styled.span`
     }
 `;
 
+const Image = styled.img`
+    filter: invert(
+        ${({ theme }) => (theme.colors.bg === "#fff" ? "0%" : "100%")}
+    );
+`;
+
 const Styled = {
     Box,
     Color,
+    Image,
 };
 
 export default Styled;

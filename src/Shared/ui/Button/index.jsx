@@ -15,10 +15,10 @@ const Button = ({
             onClick={onClick}
             $width={width}
             $height={height}
-            $clicked={text && clicked}
+            $backgroundColor={clicked ? "#000" : "#fff"}
         >
             {icon ? (
-                <img src={icon} alt="icon" />
+                <Styled.Image src={icon} alt="icon" />
             ) : color ? (
                 <Styled.Color
                     $width={width}

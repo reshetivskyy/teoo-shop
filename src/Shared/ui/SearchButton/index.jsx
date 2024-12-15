@@ -39,7 +39,7 @@ const SearchButton = ({ icon }) => {
             onFocus={handleOnFocus}
             onBlur={handleOnUnFocus}
         >
-            <img src={icon} alt="icon" />
+            <Styled.Image src={icon} alt="Icon" />
             <Styled.Input $hover={hover}>
                 <Input
                     type="text"
