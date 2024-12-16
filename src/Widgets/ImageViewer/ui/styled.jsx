@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-const Box = styled.div`
-    width: 600px;
-`;
+const Box = styled.div``;
 
 const MainImageBlock = styled.div`
     max-width: 100%;
