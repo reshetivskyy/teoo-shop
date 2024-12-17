@@ -36,4 +36,4 @@ const Router = createBrowserRouter([
     },
 ]);
 
-export default Router;
+export { Router };
