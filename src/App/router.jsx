@@ -1,18 +1,22 @@
+import { lazy, Suspense } from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 
-import { Home } from "@pages/Home";
+import { Main, Wrapper } from "@shared/styles";
 import { Footer } from "@widgets/Footer";
 import { Header } from "@widgets/Header";
+import NotFound from "@pages/NotFound";
 
-import { Main, Wrapper } from "@shared/styles";
-import { Product } from "@pages/Product";
+const Home = lazy(() => import("@pages/Home"));
+const Product = lazy(() => import("@pages/Product"));
 
 const Layout = () => {
     return (
         <Wrapper>
             <Header />
             <Main>
-                <Outlet />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Outlet />
+                </Suspense>
             </Main>
             <Footer />
         </Wrapper>
@@ -31,6 +35,10 @@ const Router = createBrowserRouter([
             {
                 path: "/new-collection/product/:id",
                 element: <Product />,
+            },
+            {
+                path: "*",
+                element: <NotFound />,
             },
         ],
     },

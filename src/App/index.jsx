@@ -1,6 +1,7 @@
 import { RouterProvider } from "react-router-dom";
-import { ThemeContextProvider } from "@shared/lib";
 import { Analytics } from "@vercel/analytics/react";
+
+import { ThemeContextProvider } from "@shared/lib";
 import { AppThemeProvider } from "./theme";
 import { Router } from "./router";
 

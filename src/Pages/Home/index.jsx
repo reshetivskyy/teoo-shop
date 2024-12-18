@@ -1,3 +1,3 @@
 import Home from "./ui";
 
-export { Home };
+export default Home;

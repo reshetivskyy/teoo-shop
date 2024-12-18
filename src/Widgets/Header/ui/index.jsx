@@ -35,7 +35,7 @@ const Header = () => {
                             </Styled.MenuLink>
                         </Styled.MenuItem>
                         <Styled.MenuItem>
-                            <Styled.MenuLink to={"/shuff"}>
+                            <Styled.MenuLink to={"/stuff"}>
                                 stuff
                             </Styled.MenuLink>
                         </Styled.MenuItem>
