@@ -23,12 +23,7 @@ const Box = styled.div`
 const Input = styled.div`
     left: 100%;
     transition: all 0.2s ease-in-out;
-    position: ${({ $hover }) => ($hover ? "static !important;" : "absolute")};
-    color: ${({ theme }) => theme.colors.text};
-
-    &::placeholder {
-        color: ${({ theme }) => theme.colors.text};
-    }
+    position: ${({ $hover }) => ($hover ? "static !important" : "absolute")};
 `;
 
 const Image = styled.img`

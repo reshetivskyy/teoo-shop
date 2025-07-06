@@ -23,10 +23,10 @@ const Desc = styled.h2`
 
 const BuyItems = styled.div`
     display: flex;
+    margin-top: 300px;
     justify-content: left;
     align-items: center;
     gap: 20px;
-    margin-top: 200px;
 `;
 
 const Styled = { Box, Data, Title, Desc, BuyItems };

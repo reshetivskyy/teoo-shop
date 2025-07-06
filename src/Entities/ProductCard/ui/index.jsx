@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import CartButton from "@features/CartButton/ui";
+import { CartButton } from "@features/CartButton";
 
 import Styled from "./styled";
 

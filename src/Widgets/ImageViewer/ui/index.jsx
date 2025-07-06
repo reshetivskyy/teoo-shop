@@ -3,7 +3,7 @@ import Styled from "./styled";
 
 const ImageViewer = ({ images }) => {
     const [currentImage, setCurrentImage] = useState(0);
-    const [clickedImage, setClickedImage] = useState(null);
+    const [clickedImage, setClickedImage] = useState(0);
     const [zoomPosition, setZoomPosition] = useState({ x: 0, y: 0 });
     const [isZoomed, setIsZoomed] = useState(false);
 

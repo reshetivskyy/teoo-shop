@@ -1,9 +1,13 @@
-import { Container } from "@shared/styles";
-import Styled from "./styled";
+import { useState } from "react";
 
+import { Container } from "@shared/styles";
+
+import { CartModal } from "@features/CartModal";
 import SearchButton from "@shared/ui/SearchButton";
 import Button from "@shared/ui/Button";
 import { useTheme } from "@shared/lib";
+
+import Styled from "./styled";
 
 import logo from "@shared/assets/images/logo.png";
 import instagram from "@shared/assets/images/instagram.svg";
@@ -14,6 +18,9 @@ import bulb from "@shared/assets/images/bulb.svg";
 
 const Header = () => {
     const { isDarkMode, toggleTheme } = useTheme();
+
+    const [isCartOpen, setIsCartOpen] = useState(false);
+    const toggleCart = () => setIsCartOpen(!isCartOpen);
 
     return (
         <Styled.Header>
@@ -47,8 +54,15 @@ const Header = () => {
                             width="52px"
                             height="52px"
                         />
+
                         <Button icon={instagram} width="52px" height="52px" />
-                        <Button icon={cart} width="52px" height="52px" />
+                        <Button
+                            icon={cart}
+                            width="52px"
+                            height="52px"
+                            onClick={toggleCart}
+                        />
+                        <CartModal isOpen={isCartOpen} onClose={toggleCart} />
                         <Button icon={user} width="52px" height="52px" />
                         <SearchButton icon={search} />
                     </Styled.Quick>

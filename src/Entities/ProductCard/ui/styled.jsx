@@ -44,7 +44,7 @@ const Prices = styled.div`
 `;
 
 const FullPrice = styled.p`
-    font-size: 28px;
+    font-size: 14px;
     font-weight: 800;
     color: ${({ theme }) => theme.colors.text};
 `;

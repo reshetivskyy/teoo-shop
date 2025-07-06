@@ -1,4 +1,4 @@
-import { Input, Text } from "@shared/styles";
+import { Input } from "@shared/styles";
 import { useState } from "react";
 import Styled from "./styled";
 

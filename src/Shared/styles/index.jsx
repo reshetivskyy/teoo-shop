@@ -25,7 +25,7 @@ const Flex = styled.div`
 const Title = styled.h1`
     font-weight: 800;
     font-size: 52px;
-    color: ${({ $color }) => $color};
+    color: ${({ $color, theme }) => $color || theme.colors.text};
     position: relative;
     display: flex;
     gap: 20px;
@@ -37,7 +37,7 @@ const Title = styled.h1`
         display: block;
         width: 100%;
         height: 3px;
-        background-color: #000;
+        background-color: ${({ theme }) => theme.colors.text};
         position: static;
     }
 `;
@@ -60,6 +60,11 @@ const Input = styled.input`
     border: 0;
     border-bottom: #ececec solid 2px;
     outline: none;
+    color: ${({ theme }) => theme.colors.text};
+
+    &::placeholder {
+        color: ${({ theme }) => theme.colors.text};
+    }
 `;
 
 const GlobalStyles = createGlobalStyle`

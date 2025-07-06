@@ -1,14 +1,14 @@
 {
-        "compilerOptions": {
-                "baseUrl": "./src",
-                "paths": {
-                        "@app/*": ["App/*"],
-                        "@processes/*": ["Processes/*"],
-                        "@pages/*": ["Pages/*"],
-                        "@widgets/*": ["Widgets/*"],
-                        "@features/*": ["Features/*"],
-                        "@entities/*": ["Entities/*"],
-                        "@shared/*": ["Shared/*"],
-                }
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@app/*": ["App/*"],
+            "@processes/*": ["Processes/*"],
+            "@pages/*": ["Pages/*"],
+            "@widgets/*": ["Widgets/*"],
+            "@features/*": ["Features/*"],
+            "@entities/*": ["Entities/*"],
+            "@shared/*": ["Shared/*"]
         }
+    }
 }

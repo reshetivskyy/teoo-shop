@@ -9,13 +9,19 @@ const Box = styled.button`
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: ${({ theme }) => theme.shadow};
 `;
 
-const Icon = styled.img``;
+const Icon = styled.img`
+    filter: invert(
+        ${({ theme }) => (theme.colors.bg === "#fff" ? "0%" : "100%")}
+    );
+`;
 
 const ToCart = styled.p`
     font-weight: 800;
     font-size: 14px;
+    color: ${({ theme }) => theme.colors.text};
 `;
 
 const Styled = {

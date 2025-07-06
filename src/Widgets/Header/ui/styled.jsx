@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const Header = styled.header``;
+const Header = styled.header`
+    @media (max-width: 1000px) {
+        display: none;
+    }
+`;
 
 const Box = styled.header`
     display: flex;
@@ -16,6 +20,10 @@ const Menu = styled.ul`
     display: flex;
     list-style-type: none;
     gap: 30px;
+
+    @media (max-width: 1300px) {
+        display: none;
+    }
 `;
 
 const MenuItem = styled.li``;
@@ -34,6 +42,9 @@ const MenuLink = styled(NavLink)`
 const Quick = styled.div`
     display: flex;
     gap: 10px;
+    @media (max-width: 1000px) {
+        display: none;
+    }
 `;
 
 const Styled = { Header, Box, Logo, Menu, MenuItem, MenuLink, Quick };

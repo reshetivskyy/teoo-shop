@@ -1,9 +1,12 @@
-import { BreadCrumbs } from "@features/BreadCrumbs";
-import { ColorPicker, SizePicker } from "@features/Picker";
-// import { SizePicker } from "@features/Picker";
-import { Container, Text, Title } from "@shared/styles";
-import { ImageViewer } from "@widgets/ImageViewer";
 import { useState } from "react";
+
+import { BreadCrumbs } from "@features/BreadCrumbs";
+import { CartButton } from "@features/CartButton";
+import { ColorPicker, SizePicker } from "@features/Picker";
+import { Container } from "@shared/styles";
+import { ImageViewer } from "@widgets/ImageViewer";
+
+import Styled from "./styled";
 
 import photo1 from "@shared/assets/images/product/1.jpg";
 import photo2 from "@shared/assets/images/product/2.jpg";
@@ -12,8 +15,6 @@ import photo4 from "@shared/assets/images/product/4.jpg";
 import photo5 from "@shared/assets/images/product/5.jpg";
 import photoT1 from "@shared/assets/images/product/TYANKAAAAAAAAA.jpg";
 import photoT2 from "@shared/assets/images/product/TYANKAAAAAAAAA2.jpg";
-import Styled from "./styled";
-import CartButton from "@features/CartButton/ui";
 
 const sizes = [
     {
@@ -38,8 +39,8 @@ const colors = [
 ];
 
 const Product = () => {
-    const [size, onSize] = useState();
-    const [color, onColor] = useState();
+    const [size, onSize] = useState(1);
+    const [color, onColor] = useState(1);
     const images = [photo1, photo2, photo3, photo4, photo5, photoT1, photoT2];
 
     return (
